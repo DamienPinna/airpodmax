@@ -1,0 +1,14 @@
+{
+  "name": "aipod_max",
+  "version": "1.0.0",
+  "description": "Site promo AirPod Max",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./design/sass/:./design/css/ --style expanded",
+    "prefix": "postcss ./design/css/style.css --use autoprefixer -d ./design/css/prefixed/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "browserslist": "last 4 versions",
+  "author": "Damien PINNA",
+  "license": "ISC"
+}
