@@ -107,20 +107,42 @@ a {
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 5;
+  position: relative;
 
   display: flex;
 
-  img:nth-child(1) {
-    max-width: 65%;
-    object-fit: contain;
+  .img-col-ipad-1 {
+    width: 65%;
     align-self: flex-start;
+  }
+
+  .img-container {
+    width: 65%;
+    position: absolute;
+    top: 41%;
+    left: 11%;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      border: 1px solid #353538;
+      position: absolute;
+      top: 17px;
+      left: 20px;
+      z-index: -1;
+    }
+
+    .img-col-ipad-2 {
+      width: 100%;
+    }
   }
 
   .colors-points {
     flex-grow: 1;
 
     ul {
-      margin-top: 70px;
+      margin-top: 55px;
 
       li {
         position: relative;
