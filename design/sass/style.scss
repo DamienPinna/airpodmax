@@ -22,6 +22,7 @@
 
   img {
     width: 32px;
+    cursor: pointer;
   }
 }
 
@@ -196,6 +197,12 @@ a {
   grid-column-end: 6;
   grid-row-start: 2;
   grid-row-end: 4;
+  background-color: #fafafa;
+
+  img {
+    width: 100%;
+    max-height: 100%;
+  }
 }
 
 .section-text-col-music {
@@ -203,4 +210,52 @@ a {
   grid-column-end: 6;
   grid-row-start: 4;
   grid-row-end: 5;
+
+  background-color: #b8b6b6;
+  display: flex;
+  align-items: center;
+
+  p {
+    font-family: "Antonio", sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.812rem;
+    display: inline-block;
+    max-width: 380px;
+    color: #fafafa;
+    margin-left: 7%;
+  }
+
+  .next {
+    cursor: pointer;
+    margin: 0 auto;
+
+    .arrow {
+      width: 28px;
+      height: 1px;
+      background-color: #fafafa;
+      position: relative;
+      @extend %center;
+      margin: 0 40px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        aspect-ratio: 1;
+        border-top: 1px solid #fafafa;
+        border-right: 1px solid #fafafa;
+        transform: rotate(45deg);
+        right: 0;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 70px;
+        aspect-ratio: 1;
+        border: 1px solid #fafafa;
+        border-radius: 50%;
+      }
+    }
+  }
 }
