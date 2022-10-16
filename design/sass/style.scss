@@ -3,7 +3,7 @@
 
 .container {
   display: grid;
-  max-width: 1800px;
+  max-width: 1600px;
   height: 100vh;
   margin: 0 auto;
   grid-template-columns: 116px repeat(3, 1fr) 116px;
@@ -71,6 +71,11 @@ a {
   @extend %center;
   border-bottom: 1px solid black;
   border-left: 1px solid black;
+
+  img {
+    margin-left: 9px;
+    cursor: pointer;
+  }
 }
 .section-text-col-iphone {
   grid-column-start: 1;
